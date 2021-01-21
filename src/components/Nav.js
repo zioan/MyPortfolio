@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Nav() {
@@ -10,9 +10,10 @@ export default function Nav() {
             Ioan Zaharia
           </NavLink>
         </li>
+        <h3>My Work</h3>
         <li>
           <NavLink exact to="/work" activeClassName="active" className="normal">
-            Work
+            HTML & CSS
           </NavLink>
         </li>
       </ul>

@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Work() {
+const Html = ({ items }) => {
   return (
-    <div>
-      <h3>My Work</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, commodi.
-      </p>
+    <div className="work-layout">
+      {items.map((item) => {
+        const { id, category, title, description, img, live, github } = item;
+        return (
+          <article key={id} className="card">
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <a href={live} target="_blank">
+              <img src={img} alt={title} />
+            </a>
+            <h4>
+              GitHub:{" "}
+              <a href={github} target="_blank">
+                {github}
+              </a>
+            </h4>
+          </article>
+        );
+      })}
     </div>
   );
-}
+};
+
+export default Html;

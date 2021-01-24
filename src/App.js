@@ -7,8 +7,15 @@ import items from "./components/Work/data";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [isDarkMode, setDarkMode] = useState("true");
+
+  const handlerToggle = () => {
+    setDarkMode(!isDarkMode);
+    console.log("clicked");
+  };
+
   return (
-    <div className="App">
+    <div className={`app ${isDarkMode} ? "dark" : ""`}>
       <BrowserRouter>
         <Switch>
           <Layout>

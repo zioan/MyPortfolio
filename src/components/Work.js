@@ -6,7 +6,7 @@ const Html = ({ items }) => {
       {items.map((item) => {
         const { id, category, title, description, img, live, github } = item;
         return (
-          <article key={id} className="card">
+          <article key={id} className="card shadow">
             <h3>{title}</h3>
             <p>{description}</p>
             <a href={live} target="_blank">

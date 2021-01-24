@@ -9,12 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(245, 245, 245);
 }
 
 main {
-  background: rgb(245, 245, 245);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 80px auto 80px;
@@ -26,15 +27,21 @@ main {
 
 nav {
   grid-area: nav;
-  border-right: 2px solid #333;
+  position: fixed;
+  height: 100%;
+  z-index: 100;
 }
 
 .top-bar {
   grid-area: top-bar;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 50px;
+  background: rgba(245, 245, 245, 0.9);
+  z-index: 2;
 }
 
 .main-area {
@@ -44,6 +51,7 @@ nav {
 header {
   margin: auto;
   margin-top: 150px;
+  padding: 2rem;
   max-width: 900px;
   grid-area: header;
   display: flex;
@@ -61,8 +69,35 @@ header {
   margin: calc((80px - 16px) / 2) auto;
 }
 
+nav img {
+  display: block;
+  margin: 20px auto 0;
+}
+
 nav ul {
-  padding: 100px 50px;
+  padding: 50px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav a::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: #333;
+  transition: 300ms;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 .top-bar {
@@ -88,8 +123,8 @@ button :hover {
 
 .work-layout {
   margin: auto;
-  margin: auto;
   margin-top: 150px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -98,8 +133,9 @@ button :hover {
 
 .card {
   padding: 17px;
-  border: 1px solid #333;
-  border-radius: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  z-index: 1;
 }
 
 .card h3,
@@ -114,10 +150,18 @@ p {
 .card img {
   width: 350px;
   margin: 20px 0;
-  /* border: 1px solid rgb(185, 185, 185); */
-  transition: transform 0.5s ease;
 }
 
-.card img:hover {
-  transform: scale(1.1);
+.card:hover {
+  transform: scale(1.05);
+}
+
+.shadow {
+  box-shadow: inset 0 -3rem 3rem rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255), 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.dark {
+  background: #333;
+  color: white;
 }

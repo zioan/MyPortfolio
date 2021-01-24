@@ -3,7 +3,7 @@ import Ioan from "./me1.png";
 
 export default function Content() {
   return (
-    <header>
+    <header className="shadow">
       <img src={Ioan} alt="Ioan Zaharia" height="250" width="250" />
       <p>
         Ioan Zaharia is a self-tought web developer looking to steps into web

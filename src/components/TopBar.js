@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import DarkMode from "./DarkMode";
 
 export default function TopBar() {
-  const [mode, setMode] = useState(false);
   return (
     <div className="top-bar">
-      <a href="https://github.com/zioan" target="_blank">
+      <a href="https://github.com/zioan" target="_blank" rel="noreferrer">
         <AiFillGithub className="ico" />
       </a>
-      <button>Dark Mode</button>
+      <DarkMode />
     </div>
   );
 }

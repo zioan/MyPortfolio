@@ -1,0 +1,32 @@
+body.dark-mode {
+  background: rgb(30, 30, 30);
+  color: #fff;
+}
+body.dark-mode a {
+  color: #fff;
+}
+
+body.dark-mode .top-bar {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+body.dark-mode .top-bar .ico {
+  color: #fff;
+}
+
+body.dark-mode button {
+  color: #fff;
+}
+
+body.dark-mode nav a::after {
+  background: #fff;
+}
+
+body.dark-mode .shadow {
+  box-shadow: inset 0 -3rem 3rem rgba(255, 255, 255, 0.1),
+    0 0 0 2px rgb(255, 255, 255), 0.3rem 0.3rem 1rem rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode nav {
+  background: rgb(37, 37, 38);
+}

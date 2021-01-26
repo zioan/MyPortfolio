@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
+import "./components/DarkMode.css";
 import Layout from "./components/Layout";
 import Content from "./components/Content";
 import Work from "./components/Work";
@@ -7,15 +8,8 @@ import items from "./components/Work/data";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [isDarkMode, setDarkMode] = useState("true");
-
-  const handlerToggle = () => {
-    setDarkMode(!isDarkMode);
-    console.log("clicked");
-  };
-
   return (
-    <div className={`app ${isDarkMode} ? "dark" : ""`}>
+    <div>
       <BrowserRouter>
         <Switch>
           <Layout>

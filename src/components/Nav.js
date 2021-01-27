@@ -18,6 +18,26 @@ export default function Nav() {
             My Work
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            exact
+            to="/curriculum"
+            activeClassName="active"
+            className="normal"
+          >
+            Curriculum Vitae
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            exact
+            to="/contact"
+            activeClassName="active"
+            className="normal"
+          >
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

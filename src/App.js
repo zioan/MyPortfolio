@@ -4,9 +4,9 @@ import Layout from "./components/Layout";
 import Content from "./components/Content";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-import items from "./components/Work/data";
+import items from "./components/Work/projects";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Curriculum from "./components/Curriculum";
+import Curriculum from "./components/Curriculum/Curriculum";
 
 function App() {
   return (

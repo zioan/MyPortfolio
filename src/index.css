@@ -180,3 +180,30 @@ button {
   margin: auto;
   border: 1px solid;
 }
+
+.curriculum {
+  margin: auto;
+  width: 794px;
+  display: flex;
+  gap: 30px;
+}
+
+.curriculum .left {
+  width: 300px;
+  /* margin: auto; */
+}
+
+.curriculum .line {
+  border: 1px solid;
+  margin-right: 25px;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h2,
+h3 {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}

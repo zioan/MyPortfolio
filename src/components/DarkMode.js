@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FaSun } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 
 function DarkMode() {
   const [mode, setMode] = useState(() => localStorage.getItem("mode"));
@@ -33,7 +35,8 @@ function DarkMode() {
     <button
       onClick={() => setMode((mode) => (mode === "dark" ? "light" : "dark"))}
     >
-      {mode === "dark" ? "Light" : "Dark"} Mode
+      {mode === "dark" ? <FaSun /> : <FaMoon />}
+      {mode === "dark" ? " Light Mode " : " Dark Mode "}
     </button>
   );
 }

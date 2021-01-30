@@ -181,9 +181,13 @@ button {
   border: 1px solid;
 }
 
-.curriculum {
-  margin: auto;
+.curriculum-layout {
   width: 794px;
+  margin: auto;
+}
+
+.curriculum {
+  padding: 0 30px;
   display: flex;
   gap: 30px;
 }
@@ -206,4 +210,8 @@ h2,
 h3 {
   text-decoration: underline;
   margin-bottom: 1rem;
+}
+
+.print-btn {
+  position: 0 right;
 }

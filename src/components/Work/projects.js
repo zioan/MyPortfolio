@@ -20,11 +20,13 @@ const data = [
   {
     id: 3,
     category: "html",
-    title: "Hotel",
+    title: "HTML Clone",
     description: "HTML & CSS",
-    img: "./img/hotel.png",
-    live: "https://hotel-html.netlify.app/",
-    github: "https://github.com/zioan/hotel",
+    img: "./img/doto.png",
+    live: "https://doto-html-clone.netlify.app/",
+    original:
+      "http://preview.codecanyon.net/item/mega-html5-banners-bundle-140-multi-purpose-banners/full_screen_preview/21213851?_ga=2.43060965.1385975857.1611996225-2138465394.1611996219",
+    github: "https://github.com/zioan/doto",
   },
   {
     id: 4,

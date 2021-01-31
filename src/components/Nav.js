@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Ioan from "./me1.png";
+import Ioan from "./me2.png";
 
 export default function Nav() {
   return (

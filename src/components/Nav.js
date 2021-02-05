@@ -1,21 +1,32 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Ioan from "./me2.png";
+import Ioan from "./ioan.jpeg";
+import Footer from "./Footer";
+
+import { RiHome8Line } from "react-icons/ri";
+import { HiOutlineUser } from "react-icons/hi";
+import { RiBriefcase2Line } from "react-icons/ri";
+import { RiGitRepositoryLine } from "react-icons/ri";
+import { RiMailOpenLine } from "react-icons/ri";
 
 export default function Nav() {
   return (
-    <nav className="shadow">
-      <img src={Ioan} alt="Ioan Zaharia" height="200" width="200" />
+    <nav>
+      <div>
+        <img src={Ioan} alt="Ioan Zaharia" height="200" width="200" />
+        <h2 className="name">IOAN ZAHARIA</h2>
+      </div>
       <ul>
         <li>
           <NavLink exact to="/" activeClassName="active" className="normal">
-            Ioan Zaharia
+            <RiHome8Line className="menu-icon" />
+            HOME
           </NavLink>
         </li>
-        <br />
         <li>
           <NavLink exact to="/work" activeClassName="active" className="normal">
-            My Work
+            <RiBriefcase2Line className="menu-icon" />
+            PORTFOLIO
           </NavLink>
         </li>
         <li>
@@ -25,7 +36,8 @@ export default function Nav() {
             activeClassName="active"
             className="normal"
           >
-            Curriculum Vitae
+            <RiGitRepositoryLine className="menu-icon" />
+            RESUME
           </NavLink>
         </li>
         <li>
@@ -35,10 +47,13 @@ export default function Nav() {
             activeClassName="active"
             className="normal"
           >
-            Contact
+            <RiMailOpenLine className="menu-icon" />
+            CONTACT
           </NavLink>
         </li>
       </ul>
+
+      <Footer />
     </nav>
   );
 }

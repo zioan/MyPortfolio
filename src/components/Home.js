@@ -1,10 +1,8 @@
 import React from "react";
-import Ioan from "./me1.png";
 
-export default function Content() {
+export default function Home() {
   return (
-    <header className="shadow">
-      <img src={Ioan} alt="Ioan Zaharia" height="250" width="250" />
+    <div className="home">
       <p>
         Ioan Zaharia is a self-tought web developer looking to steps into web
         development world.
@@ -16,6 +14,6 @@ export default function Content() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus
         animi ratione, ipsa quod cupiditate fugit quos iste eum officiis?
       </p>
-    </header>
+    </div>
   );
 }

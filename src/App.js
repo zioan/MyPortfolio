@@ -1,7 +1,7 @@
 import React from "react";
 import "./components/DarkMode.css";
 import Layout from "./components/Layout";
-import Content from "./components/Content";
+import Home from "./components/Home";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import items from "./components/Work/projects";
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Layout>
             <Route exact path="/">
-              <Content />
+              <Home />
             </Route>
             <Route path="/work">
               <Work items={items} />

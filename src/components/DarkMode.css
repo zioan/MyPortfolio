@@ -1,25 +1,13 @@
 body.dark-mode {
-  background: rgb(30, 30, 30);
+  background: rgb(44, 45, 47);
   color: #fff;
 }
 body.dark-mode a {
-  color: #fff;
-}
-
-body.dark-mode .top-bar {
-  background: rgba(30, 30, 30, 0.9);
-}
-
-body.dark-mode .top-bar .ico {
-  color: #fff;
+  color: rgb(77, 77, 77);
 }
 
 body.dark-mode button {
   color: #fff;
-}
-
-body.dark-mode nav a::after {
-  background: #fff;
 }
 
 body.dark-mode .shadow {
@@ -28,5 +16,9 @@ body.dark-mode .shadow {
 }
 
 body.dark-mode nav {
-  background: rgb(37, 37, 38);
+  background: rgb(23, 24, 27);
+}
+
+body.dark-mode .active {
+  color: #fff;
 }
